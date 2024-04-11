@@ -1,4 +1,5 @@
 node_modules
 dist
 .vscode
-data
+data/logs/*
+!**/*/.gitkeep
