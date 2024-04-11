@@ -1,0 +1,13 @@
+{
+	"tabWidth": 2,
+	"useTabs": true,
+	"semi": false,
+	"singleQuote": true,
+	"trailingComma": "all",
+	"overrides": [
+		{
+			"files": ["**/.*rc", "**/*.json"],
+			"options": { "parser": "json" }
+		}
+	]
+}
