@@ -1,5 +1,5 @@
 /**@param {string} a */
 function some(a) {
-	console.log(a)
+	return a
 }
 some(0)

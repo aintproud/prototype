@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
       "format": "prettier --write ./**/*.mjs",
-      "start": "npm src/index.mjs",
+      "start": "node src/index.mjs",
       "start:dev": "nodemon src/index.mjs",
       "lint": "eslint \"{src,test}/**/*.mjs\" --fix",
       "test": "jest",
