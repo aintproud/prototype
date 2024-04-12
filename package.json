@@ -2,7 +2,7 @@
   "name": "prototype",
   "version": "1.0.0",
   "scripts": {
-      "format": "prettier --write ./**/*.mjs",
+      "format": "prettier --write  \"{src,test}/**/*.mjs\"",
       "start": "node src/index.mjs",
       "start:dev": "nodemon src/index.mjs",
       "lint": "eslint \"{src,test}/**/*.mjs\" --fix",
