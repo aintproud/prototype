@@ -1,6 +1,6 @@
 FROM node:20-alpine
-WORKDIR /usr/server
+WORKDIR /app
+COPY package*.json ./
+RUN npm i
 COPY . .
-RUN npm ci --only=production
-EXPOSE 8000
 CMD ["npm", "start"]

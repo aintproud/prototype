@@ -1,5 +1,11 @@
 version: '3.8'
 services:
+  web:
+    build: .
+    ports:
+      - '8000:8000'
+    depends_on:
+      - pg
   pg:
     image: postgres:latest
     ports:
