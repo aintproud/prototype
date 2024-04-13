@@ -1,30 +1,16 @@
-// @ts-nocheck
-import pino from 'pino'
-import config from '../config.mjs'
-const consoleTransport =
-	config.type === 'PROD'
-		? {
-				target: 'pino/file',
-			}
-		: {
-				target: 'pino-pretty',
-				options: {
-					levelFirst: true,
-					colorize: true,
-					translateTime: 'SYS:yyyy-mm-dd HH:MM:ss',
-					ignore: 'pid,hostname',
-				},
-			}
-const fileTransport = {
-	target: 'pino/file',
+import { pino } from 'pino'
+
+const consoleTransport = {
+	target: 'pino-pretty',
 	options: {
-		destination: 'logs/app.log',
-		mkdir: true,
-		rotate: '7d',
+		levelFirst: true,
+		colorize: true,
+		translateTime: 'SYS:yyyy-mm-dd HH:MM:ss',
+		ignore: 'pid,hostname',
 	},
 }
 const transports = pino.transport({
-	targets: [consoleTransport, fileTransport],
+	targets: [consoleTransport],
 })
 export const logger = pino(transports)
 
