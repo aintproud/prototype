@@ -1,0 +1,11 @@
+{
+	"include": ["**/*.mts"],
+	"compilerOptions": {
+		"module": "ESNext",
+		"target": "ESNext",
+		"outDir": "dist",
+		"rootDir": "src",
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true
+	}
+}
