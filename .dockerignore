@@ -4,5 +4,4 @@ node_modules
 .prettierrc
 .prettierignore
 .eslintrc.json
-test
 README.md
